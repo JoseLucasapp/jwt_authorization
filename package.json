@@ -1,16 +1,17 @@
 {
-  "name": "my_money_app",
+  "name": "JWT_AUTH",
   "version": "1.0.0",
   "description": "",
   "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/app.js"
+    "dev": "cross-env NODE_ENV=dev nodemon ./src/app.js",
+    "start": "cross-env NODE_ENV=production node ./src/app.js"
   },
   "keywords": [],
   "author": "José Lucas <josluc2016@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
